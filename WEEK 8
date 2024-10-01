@@ -1,0 +1,59 @@
+INSERT INTO Rural_Areas (Rural_Area_ID, Name, Location)
+VALUES
+  (1, 'Rural Area 1', 'Village 1'),
+  (2, 'Rural Area 2', 'Village 2'),
+  (3, 'Rural Area 3', 'Village 3');
+
+INSERT INTO Students (Student_ID, Name, Age, Gender, Rural_Area_ID)
+VALUES
+  (1, 'Aisha Ali', 15, 'Female', 1),
+  (2, 'Fatima Hassan', 17, 'Female', 2),
+  (3, 'Nadia Ahmed', 16, 'Female', 3),
+  (4, 'Jamilah Mohammed', 15, 'Female', 1),
+  (5, 'Amina Ibrahim', 18, 'Female', 2),
+  (6, 'Safia Ali', 16, 'Female', 3);
+
+INSERT INTO Schools (School_ID, Name, Location, Type)
+VALUES
+  (1, 'Rural School 1', 'Village 1', 'Primary'),
+  (2, 'Rural School 2', 'Village 2', 'Secondary'),
+  (3, 'Rural School 3', 'Village 3', 'Primary');
+
+INSERT INTO Teachers (Teacher_ID, Name, Qualification, School_ID)
+VALUES
+  (1, 'Mr. Ahmed', 'Bachelor of Education', 1),
+  (2, 'Ms. Fatima', 'Master of Education', 2),
+  (3, 'Mr. Mohammed', 'Bachelor of Education', 3),
+  (4, 'Ms. Aisha', 'Master of Education', 1),
+  (5, 'Mr. Ibrahim', 'Bachelor of Education', 2),
+  (6, 'Ms. Nadia', 'Master of Education', 3);
+
+INSERT INTO Courses (Course_ID, Name, Description, School_ID)
+VALUES
+  (1, 'Mathematics', 'Basic mathematics course', 1),
+  (2, 'English', 'Basic English course', 2),
+  (3, 'Science', 'Basic science course', 3),
+  (4, 'History', 'Basic history course', 1),
+  (5, 'Geography', 'Basic geography course', 2),
+  (6, 'Computer Science', 'Basic computer science course', 3);
+
+INSERT INTO Enrollments (Enrollment_ID, Student_ID, Course_ID, Start_Date, End_Date)
+VALUES
+  (1, 1, 1, '2022-01-01', '2022-06-30'),
+  (2, 2, 2, '2022-01-01', '2022-06-30'),
+  (3, 3, 3, '2022-01-01', '2022-06-30'),
+  (4, 1, 4, '2022-07-01', '2022-12-31'),
+  (5, 2, 5, '2022-07-01', '2022-12-31'),
+  (6, 3, 6, '2022-07-01', '2022-12-31');
+
+INSERT INTO Scholarships (Scholarship_ID, Student_ID, Amount, Duration)
+VALUES
+  (1, 1, 500.00, 2),
+  (2, 2, 750.00, 3),
+  (3, 3, 1000.00, 4);
+
+INSERT INTO Community_Engagements (Community_Engagement_ID, Rural_Area_ID, Description, Start_Date, End_Date)
+VALUES
+  (1, 1, 'Community outreach program', '2022-01-01', '2022-06-30'),
+  (2, 2, 'Cultural awareness campaign', '2022-01-01', '2022-06-30'),
+  (3, 3, 'Education advocacy program', '2022-01-01', '2022-06-30');
